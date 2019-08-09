@@ -18,7 +18,7 @@ from django.urls import path
 from django.conf.urls import url, include
 from django.views.generic import TemplateView
 from django.contrib.auth.decorators import login_required
-from trial.views import resume_form
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body>
+
+<h1><center><b><u>PERSONAL INFORMATION</u></b></center></h1>
+<br><h3><center><b>Please fill this form.</b></center></h3>
+
+</body>
+</html>
+
+<br><br><br>
+
+<center>
+    <form action="." method='POST'>{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value = 'Next' />
+    </form>
+</center>
+
+{% endblock %}
